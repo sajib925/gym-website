@@ -1,4 +1,4 @@
-
+// for header fixed
 const header = document.querySelector(".header");
 const headerHeight = header.clientHeight;
 
@@ -11,12 +11,9 @@ window.addEventListener("scroll", () => {
 });
 
 
+//for page smooth scrolling
 
 const lenis = new Lenis()
-
-lenis.on('scroll', (e) => {
-    console.log(e)
-})
 
 function raf(time) {
     lenis.raf(time)
@@ -24,6 +21,9 @@ function raf(time) {
 }
 
 requestAnimationFrame(raf)
+
+// slider one
+
 const swiper2 = new Swiper(".mySwiper2", {
     breakpoints: {
         // when window width is >= 320px
@@ -53,6 +53,8 @@ const swiper2 = new Swiper(".mySwiper2", {
     },
 });
 
+// slider two
+
 const swiper = new Swiper(".mySwiper", {
     loop: true,
     autoplay: {
@@ -64,6 +66,7 @@ const swiper = new Swiper(".mySwiper", {
     },
 });
 
+// for slider navigate button change
 const sliderButtonNext = document.querySelector('.swiper-button_next');
 const sliderButtonPrev = document.querySelector('.swiper-button_prev');
 const sliderButtonNext2 = document.querySelector('.swiper_button_next');
